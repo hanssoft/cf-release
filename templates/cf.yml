@@ -854,7 +854,6 @@ properties:
 
   hm9000:
     url: (( "https://hm9000." system_domain ))
-    port: 5155
     ca_cert:
     server_cert:
     server_key:
@@ -1254,7 +1253,7 @@ meta:
 
   hm9000_routes:
   - name: hm9000
-    port: (( .properties.hm9000.port ))
+    port: 5155
     registration_interval: 20s
     tags:
       component: HM9K
